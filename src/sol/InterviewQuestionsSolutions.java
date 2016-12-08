@@ -205,7 +205,7 @@ public class InterviewQuestionsSolutions {
     public static List<Interval> getComplement(List<Interval> input) {
         ArrayList<Interval> output = new ArrayList<>();
         // If the input is empty, the result is the whole range
-        if (input.isEmpty()) {
+        if (input == null || input.isEmpty()) {
             output.add(new Interval(0, 100));
             return output;
         }
